@@ -2,10 +2,10 @@ import React from "react";
 
 // core components
 import ExamplesNavbar from "components/Navbars/MTGNavbar.js";
-import MTGPlayerForm from "components/MTGViews/MTGPlayerForm.js"
+import MTGShelfList from "components/MTGViews/MTGShelfList.js"
 
 
-function MTGPlayerLand() {
+function MTGShelf() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -16,9 +16,9 @@ function MTGPlayerLand() {
   return (
     <>
       <ExamplesNavbar />
-      <MTGPlayerForm />
+      <MTGShelfList />
     </>
   );
 }
 
-export default MTGPlayerLand;
+export default MTGShelf;

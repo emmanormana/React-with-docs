@@ -2,23 +2,22 @@ import React from "react";
 
 // core components
 import ExamplesNavbar from "components/Navbars/MTGNavbar.js";
-import MTGPlayerForm from "components/MTGViews/MTGPlayerForm.js"
+import MTGShelfCardsList from "components/MTGViews/MTGShelfCardsList.js";
 
-
-function MTGPlayerLand() {
+function MTGShelfCards() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
-    document.body.classList.add("register-page");
+    document.body.classList.add("profile-page");
     return function cleanup() {
-      document.body.classList.remove("register-page");
+      document.body.classList.remove("profile-page");
     };
   });
   return (
     <>
       <ExamplesNavbar />
-      <MTGPlayerForm />
+      <MTGShelfCardsList />
     </>
   );
 }
 
-export default MTGPlayerLand;
+export default MTGShelfCards;

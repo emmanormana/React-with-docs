@@ -112,7 +112,7 @@ class Tables extends React.Component {
       });
   }
 
-  MakeaWish = (id) => {
+  AddToShelf = (id) => {
     axios.get(`http://localhost:5000/api/MTGCard/MTGId/`)
       .then((response) => {
         // handle success 
@@ -150,9 +150,9 @@ class Tables extends React.Component {
           color="info"
           outline
           size="sm"
-          onClick={this.MakeaWish(item.id)}
+          onClick={this.AddToShelf(item.id)}
           >
-          <i className="nc-icon nc-bag-16" /> Wish It!
+          <i className="nc-icon nc-send" /> Add to Shelf
           </Button>
         </td>             
       </tr>)
@@ -170,7 +170,7 @@ class Tables extends React.Component {
           style=
           {
             {
-            backgroundImage: "url(" + require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Ferocious_Pup_M20_1920x1080.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_WP_ArchiveTrap_1280x960.jpg") + ")"
             }
           }
           className="page-header"
@@ -184,7 +184,7 @@ class Tables extends React.Component {
                 <Col md="12">
                   <Card>
                     <CardHeader>
-                      <CardTitle tag="h4">Choose your Weapons</CardTitle>
+                      <CardTitle tag="h4">Choose Your Weapons</CardTitle>
                       <input placeholder="Search..." type="text" className="form-control"
                         value=
                         {
@@ -240,13 +240,20 @@ class Tables extends React.Component {
                             <th>Set</th>
                             <th>Set Code</th>
                             <th>Quantity</th>
-                            <th>Wish</th>
+                            <th>Shelf</th>
                           </tr>
                         </thead>
                         <tbody>
                           {this.rendertable()}
                         </tbody>
                       </Table>
+                        <Button
+                        href="/mtgshelf"
+                        className="btn-round"
+                        color="primary"
+                        >
+                          Return To Previous Menu
+                        </Button>
                     </CardBody>
                   </Card>
                 </Col>

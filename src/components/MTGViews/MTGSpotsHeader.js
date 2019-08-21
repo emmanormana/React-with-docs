@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -23,7 +5,7 @@ import { Button, Container } from "reactstrap";
 
 // core components
 
-function MTGLandingPageHeader() {
+function MTGSpotsHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -44,7 +26,7 @@ function MTGLandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Ferocious_Pup_M20_1920x1080.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Approach-of-the-Second-Sun_AKH_1280x960_Wallpaper.jpg") + ")"
         }}
         className="page-header"
         data-parallax={true}
@@ -53,26 +35,44 @@ function MTGLandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Choose your Deck</h1>
-            <h3>For thorough explanation on how the system works, please click on documentation.</h3>
+            <h1>What will you cast?</h1>
+            <h3>Hint: Note down your customer's Wish Id.</h3>
             <br />
             <Button
-              href="/MTGPlayer"
+              href="/MTGWish"
               className="btn-round mr-1"
               color="neutral"
               target="_blank"
               outline
             >
-              MTG Player
+              Find a Wish
             </Button>
             <Button
-              href="/MTGSpot"
+              href="/MTGBox"
               className="btn-round mr-1"
               color="neutral"
               target="_blank"
               outline
             >
-              Spot Master
+              Manage Boxes
+            </Button>
+            <Button
+              href="/MTGGrantWish"
+              className="btn-round mr-1"
+              color="neutral"
+              target="_blank"
+              outline
+            >
+              Grant a Wish
+            </Button>
+            <Button
+              href="/MTGReturn"
+              className="btn-round mr-1"
+              color="neutral"
+              target="_blank"
+              outline
+            >
+              Return a Card
             </Button>
           </div>
         </Container>
@@ -81,4 +81,4 @@ function MTGLandingPageHeader() {
   );
 }
 
-export default MTGLandingPageHeader;
+export default MTGSpotsHeader;

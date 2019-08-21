@@ -2,7 +2,7 @@ import React from "react";
 
 // core components
 import ExamplesNavbar from "components/Navbars/MTGNavbar.js";
-import LandingPageHeader from "components/MTGViews/MTGCardsHeader.js";
+import MTGCardsHeader from "components/MTGViews/MTGCardsHeader.js";
 
 function MTGCards() {
   document.documentElement.classList.remove("nav-open");
@@ -15,7 +15,7 @@ function MTGCards() {
   return (
     <>
       <ExamplesNavbar />
-      <LandingPageHeader />
+      <MTGCardsHeader />
     </>
   );
 }

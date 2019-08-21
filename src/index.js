@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
@@ -32,6 +14,12 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import MTGPlayer from "views/MTG4Us/MTGPlayer.js";
 import MTGCards from "views/MTG4Us/MTGCards.js";
+import MTGSpots from "views/MTG4Us/MTGSpots.js";
+import MTGSpotLanding from "views/MTG4Us/MTGSpotLanding.js";
+import MTGCustomerLanding from "views/MTG4Us/MTGCustomerLanding.js";
+import MTGCustSpots from "views/MTG4Us/MTGCustSpots.js";
+import MTGShelf from "views/MTG4Us/MTGShelf.js";
+import MTGShelfCards from "views/MTG4Us/MTGShelfCards.js";
 // others
 
 ReactDOM.render(
@@ -61,6 +49,34 @@ ReactDOM.render(
       <Route
         path="/mtgcards"
         render={props => <MTGCards {...props} />}
+      />
+      <Route
+        path="/mtgspot"
+        render={props => <MTGSpots {...props} />}
+      />
+      <Route
+        path="/mtgspotlanding"
+        render={props => <MTGSpotLanding {...props} />}
+      />
+      <Route
+        path="/mtgcustomerlanding"
+        render={props => <MTGCustomerLanding {...props} />}
+      />
+      <Route
+        path="/mtgcustspots"
+        render={props => <MTGCustSpots {...props} />}
+      />
+      <Route
+        path="/mtgshelf"
+        render={props => <MTGShelf {...props} />}
+      />
+      <Route
+        path="/mtgshelfcards"
+        render={props => <MTGShelfCards {...props} />}
+      />
+      <Route
+      path="/mtgselectspot/:id"
+      render={props => <MTGShelfCards {...props} />}
       />
       <Redirect to="/index" />
     </Switch>
