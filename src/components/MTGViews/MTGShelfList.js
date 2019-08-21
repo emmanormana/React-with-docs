@@ -3,15 +3,12 @@ import React from "react";
 // core components
 import MTGShelfTable from "components/MTGTables/MTGShelfTable.js";
 
-
-function MTGShelfList() {
-
+function MTGShelfList(props) {
   return (
     <>
-      <MTGShelfTable />
+      <MTGShelfTable {...props} />
     </>
   );
-
 }
 
 export default MTGShelfList;

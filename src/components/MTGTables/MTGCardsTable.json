@@ -1,0 +1,1857 @@
+[
+  {
+    "name": "Ahn-Crop Invader",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461040,
+    "id": 1
+  },
+  {
+    "name": "Aid the Fallen",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461003,
+    "id": 2
+  },
+  {
+    "name": "Ajani, the Greathearted",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461111,
+    "id": 3
+  },
+  {
+    "name": "Ajani's Pridemate",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460931,
+    "id": 4
+  },
+  {
+    "name": "Angrath, Captain of Chaos",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461154,
+    "id": 5
+  },
+  {
+    "name": "Angrath's Rampage",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461112,
+    "id": 6
+  },
+  {
+    "name": "Arboreal Grazer",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461076,
+    "id": 7
+  },
+  {
+    "name": "Arlinn, Voice of the Pack",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461077,
+    "id": 8
+  },
+  {
+    "name": "Arlinn's Wolf",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461078,
+    "id": 9
+  },
+  {
+    "name": "Ashiok, Dream Render",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461155,
+    "id": 10
+  },
+  {
+    "name": "Ashiok's Skulker",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460967,
+    "id": 11
+  },
+  {
+    "name": "Augur of Bolas",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460968,
+    "id": 12
+  },
+  {
+    "name": "Aven Eternal",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460969,
+    "id": 13
+  },
+  {
+    "name": "Awakening of Vitu-Ghazi",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461079,
+    "id": 14
+  },
+  {
+    "name": "Band Together",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461080,
+    "id": 15
+  },
+  {
+    "name": "Banehound",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461004,
+    "id": 16
+  },
+  {
+    "name": "Battlefield Promotion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460932,
+    "id": 17
+  },
+  {
+    "name": "Bioessence Hydra",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461113,
+    "id": 18
+  },
+  {
+    "name": "Blast Zone",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461171,
+    "id": 19
+  },
+  {
+    "name": "Bleeding Edge",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461005,
+    "id": 20
+  },
+  {
+    "name": "Blindblast",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461041,
+    "id": 21
+  },
+  {
+    "name": "Bloom Hulk",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461081,
+    "id": 22
+  },
+  {
+    "name": "Bolas's Citadel",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461006,
+    "id": 23
+  },
+  {
+    "name": "Bolt Bend",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461042,
+    "id": 24
+  },
+  {
+    "name": "Bond of Discipline",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460933,
+    "id": 25
+  },
+  {
+    "name": "Bond of Flourishing",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461082,
+    "id": 26
+  },
+  {
+    "name": "Bond of Insight",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460970,
+    "id": 27
+  },
+  {
+    "name": "Bond of Passion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461043,
+    "id": 28
+  },
+  {
+    "name": "Bond of Revival",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461007,
+    "id": 29
+  },
+  {
+    "name": "Bulwark Giant",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460934,
+    "id": 30
+  },
+  {
+    "name": "Burning Prophet",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461044,
+    "id": 31
+  },
+  {
+    "name": "Callous Dismissal",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460971,
+    "id": 32
+  },
+  {
+    "name": "Casualties of War",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461114,
+    "id": 33
+  },
+  {
+    "name": "Centaur Nurturer",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461083,
+    "id": 34
+  },
+  {
+    "name": "Chainwhip Cyclops",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461045,
+    "id": 35
+  },
+  {
+    "name": "Challenger Troll",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461084,
+    "id": 36
+  },
+  {
+    "name": "Chandra, Fire Artisan",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461046,
+    "id": 37
+  },
+  {
+    "name": "Chandra's Pyrohelix",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461047,
+    "id": 38
+  },
+  {
+    "name": "Chandra's Triumph",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461048,
+    "id": 39
+  },
+  {
+    "name": "Charity Extractor",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461008,
+    "id": 40
+  },
+  {
+    "name": "Charmed Stray",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460935,
+    "id": 41
+  },
+  {
+    "name": "Command the Dreadhorde",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461009,
+    "id": 42
+  },
+  {
+    "name": "Commence the Endgame",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460972,
+    "id": 43
+  },
+  {
+    "name": "Contentious Plan",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460973,
+    "id": 44
+  },
+  {
+    "name": "Courage in Crisis",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461085,
+    "id": 45
+  },
+  {
+    "name": "Cruel Celebrant",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461115,
+    "id": 46
+  },
+  {
+    "name": "Crush Dissent",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460974,
+    "id": 47
+  },
+  {
+    "name": "Cyclops Electromancer",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461049,
+    "id": 48
+  },
+  {
+    "name": "Davriel, Rogue Shadowmage",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461010,
+    "id": 49
+  },
+  {
+    "name": "Davriel's Shadowfugue",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461011,
+    "id": 50
+  },
+  {
+    "name": "Deathsprout",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461116,
+    "id": 51
+  },
+  {
+    "name": "Defiant Strike",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460936,
+    "id": 52
+  },
+  {
+    "name": "Deliver Unto Evil",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461012,
+    "id": 53
+  },
+  {
+    "name": "Demolish",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461050,
+    "id": 54
+  },
+  {
+    "name": "Despark",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461117,
+    "id": 55
+  },
+  {
+    "name": "Desperate Lunge",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463833,
+    "id": 56
+  },
+  {
+    "name": "Devouring Hellion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461051,
+    "id": 57
+  },
+  {
+    "name": "Divine Arrow",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460937,
+    "id": 58
+  },
+  {
+    "name": "Domri, Anarch of Bolas",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461118,
+    "id": 59
+  },
+  {
+    "name": "Domri's Ambush",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461119,
+    "id": 60
+  },
+  {
+    "name": "Dovin, Hand of Control",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461156,
+    "id": 61
+  },
+  {
+    "name": "Dovin's Veto",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461120,
+    "id": 62
+  },
+  {
+    "name": "Dreadhorde Arcanist",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461052,
+    "id": 63
+  },
+  {
+    "name": "Dreadhorde Butcher",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461121,
+    "id": 64
+  },
+  {
+    "name": "Dreadhorde Invasion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461013,
+    "id": 65
+  },
+  {
+    "name": "Dreadhorde Twins",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461053,
+    "id": 66
+  },
+  {
+    "name": "Dreadmalkin",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461014,
+    "id": 67
+  },
+  {
+    "name": "Duskmantle Operative",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461015,
+    "id": 68
+  },
+  {
+    "name": "Elite Guardmage",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461122,
+    "id": 69
+  },
+  {
+    "name": "Emergence Zone",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461172,
+    "id": 70
+  },
+  {
+    "name": "Enforcer Griffin",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460938,
+    "id": 71
+  },
+  {
+    "name": "Enter the God-Eternals",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461123,
+    "id": 72
+  },
+  {
+    "name": "Erratic Visionary",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460975,
+    "id": 73
+  },
+  {
+    "name": "Eternal Skylord",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460976,
+    "id": 74
+  },
+  {
+    "name": "Huatli's Raptor",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461127,
+    "id": 75
+  },
+  {
+    "name": "Ignite the Beacon",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460945,
+    "id": 76
+  },
+  {
+    "name": "Ilharg, the Raze-Boar",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461060,
+    "id": 77
+  },
+  {
+    "name": "Eternal Taskmaster",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461017,
+    "id": 78
+  },
+  {
+    "name": "Evolution Sage",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461086,
+    "id": 79
+  },
+  {
+    "name": "Fblthp, the Lost",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460977,
+    "id": 80
+  },
+  {
+    "name": "Feather, the Redeemed",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461124,
+    "id": 81
+  },
+  {
+    "name": "Finale of Devastation",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461087,
+    "id": 82
+  },
+  {
+    "name": "Finale of Eternity",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461018,
+    "id": 83
+  },
+  {
+    "name": "Finale of Glory",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460939,
+    "id": 84
+  },
+  {
+    "name": "Finale of Promise",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461054,
+    "id": 85
+  },
+  {
+    "name": "Finale of Revelation",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460978,
+    "id": 86
+  },
+  {
+    "name": "Firemind Vessel",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461164,
+    "id": 87
+  },
+  {
+    "name": "Flux Channeler",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460979,
+    "id": 88
+  },
+  {
+    "name": "Forced Landing",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461088,
+    "id": 89
+  },
+  {
+    "name": "Forest",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461189,
+    "id": 90
+  },
+  {
+    "name": "Gateway Plaza",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461173,
+    "id": 91
+  },
+  {
+    "name": "Giant Growth",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461089,
+    "id": 92
+  },
+  {
+    "name": "Gideon Blackblade",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460940,
+    "id": 93
+  },
+  {
+    "name": "Gideon, the Oathsworn",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463832,
+    "id": 94
+  },
+  {
+    "name": "Gideon's Battle Cry",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463834,
+    "id": 95
+  },
+  {
+    "name": "Gideon's Company",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463835,
+    "id": 96
+  },
+  {
+    "name": "Gideon's Sacrifice",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460941,
+    "id": 97
+  },
+  {
+    "name": "Gideon's Triumph",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460942,
+    "id": 98
+  },
+  {
+    "name": "Gleaming Overseer",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461125,
+    "id": 99
+  },
+  {
+    "name": "Goblin Assailant",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461055,
+    "id": 100
+  },
+  {
+    "name": "Goblin Assault Team",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461056,
+    "id": 101
+  },
+  {
+    "name": "God-Eternal Bontu",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461019,
+    "id": 102
+  },
+  {
+    "name": "God-Eternal Kefnet",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460980,
+    "id": 103
+  },
+  {
+    "name": "God-Eternal Oketra",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460943,
+    "id": 104
+  },
+  {
+    "name": "God-Eternal Rhonas",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461090,
+    "id": 105
+  },
+  {
+    "name": "God-Pharaoh's Statue",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461165,
+    "id": 106
+  },
+  {
+    "name": "Grateful Apparition",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460944,
+    "id": 107
+  },
+  {
+    "name": "Grim Initiate",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461057,
+    "id": 108
+  },
+  {
+    "name": "Guild Globe",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461166,
+    "id": 109
+  },
+  {
+    "name": "Guildpact Informant",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463838,
+    "id": 110
+  },
+  {
+    "name": "Heartfire",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461058,
+    "id": 111
+  },
+  {
+    "name": "Heartwarming Redemption",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461126,
+    "id": 112
+  },
+  {
+    "name": "Herald of the Dreadhorde",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461020,
+    "id": 113
+  },
+  {
+    "name": "Honor the God-Pharaoh",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461059,
+    "id": 114
+  },
+  {
+    "name": "Huatli, the Sun's Heart",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461157,
+    "id": 115
+  },
+  {
+    "name": "Interplanar Beacon",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461174,
+    "id": 116
+  },
+  {
+    "name": "Invade the City",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461128,
+    "id": 117
+  },
+  {
+    "name": "Invading Manticore",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461061,
+    "id": 118
+  },
+  {
+    "name": "Iron Bully",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461167,
+    "id": 119
+  },
+  {
+    "name": "Ironclad Krovod",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460946,
+    "id": 120
+  },
+  {
+    "name": "Island",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461180,
+    "id": 121
+  },
+  {
+    "name": "Jace, Arcane Strategist",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463837,
+    "id": 122
+  },
+  {
+    "name": "Jace, Wielder of Mysteries",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460981,
+    "id": 123
+  },
+  {
+    "name": "Jace's Projection",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463839,
+    "id": 124
+  },
+  {
+    "name": "Jace's Ruse",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463840,
+    "id": 125
+  },
+  {
+    "name": "Jace's Triumph",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460982,
+    "id": 126
+  },
+  {
+    "name": "Jaya, Venerated Firemage",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461062,
+    "id": 127
+  },
+  {
+    "name": "Jaya's Greeting",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461063,
+    "id": 128
+  },
+  {
+    "name": "Jiang Yanggu, Wildcrafter",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461091,
+    "id": 129
+  },
+  {
+    "name": "Karn, the Great Creator",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460928,
+    "id": 130
+  },
+  {
+    "name": "Karn's Bastion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461175,
+    "id": 131
+  },
+  {
+    "name": "Kasmina, Enigmatic Mentor",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460983,
+    "id": 132
+  },
+  {
+    "name": "Kasmina's Transmutation",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460984,
+    "id": 133
+  },
+  {
+    "name": "Kaya, Bane of the Dead",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461158,
+    "id": 134
+  },
+  {
+    "name": "Kaya's Ghostform",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461021,
+    "id": 135
+  },
+  {
+    "name": "Kiora, Behemoth Beckoner",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461159,
+    "id": 136
+  },
+  {
+    "name": "Kiora's Dambreaker",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460985,
+    "id": 137
+  },
+  {
+    "name": "Kraul Stinger",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461092,
+    "id": 138
+  },
+  {
+    "name": "Krenko, Tin Street Kingpin",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461064,
+    "id": 139
+  },
+  {
+    "name": "Kronch Wrangler",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461093,
+    "id": 140
+  },
+  {
+    "name": "Law-Rune Enforcer",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460947,
+    "id": 141
+  },
+  {
+    "name": "Lazotep Behemoth",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461022,
+    "id": 142
+  },
+  {
+    "name": "Lazotep Plating",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460986,
+    "id": 143
+  },
+  {
+    "name": "Lazotep Reaver",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461023,
+    "id": 144
+  },
+  {
+    "name": "Leyline Prowler",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461129,
+    "id": 145
+  },
+  {
+    "name": "Liliana, Dreadhorde General",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461024,
+    "id": 146
+  },
+  {
+    "name": "Liliana's Triumph",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461025,
+    "id": 147
+  },
+  {
+    "name": "Living Twister",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461130,
+    "id": 148
+  },
+  {
+    "name": "Loxodon Sergeant",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460948,
+    "id": 149
+  },
+  {
+    "name": "Makeshift Battalion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460949,
+    "id": 150
+  },
+  {
+    "name": "Mana Geode",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461168,
+    "id": 151
+  },
+  {
+    "name": "Martyr for the Cause",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460950,
+    "id": 152
+  },
+  {
+    "name": "Massacre Girl",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461026,
+    "id": 153
+  },
+  {
+    "name": "Mayhem Devil",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461131,
+    "id": 154
+  },
+  {
+    "name": "Merfolk Skydiver",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461132,
+    "id": 155
+  },
+  {
+    "name": "Mizzium Tank",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461065,
+    "id": 156
+  },
+  {
+    "name": "Mobilized District",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461176,
+    "id": 157
+  },
+  {
+    "name": "Mountain",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461186,
+    "id": 158
+  },
+  {
+    "name": "Mowu, Loyal Companion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461094,
+    "id": 159
+  },
+  {
+    "name": "Naga Eternal",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460987,
+    "id": 160
+  },
+  {
+    "name": "Nahiri, Storm of Stone",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461160,
+    "id": 161
+  },
+  {
+    "name": "Nahiri's Stoneblades",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461066,
+    "id": 162
+  },
+  {
+    "name": "Narset, Parter of Veils",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460988,
+    "id": 163
+  },
+  {
+    "name": "Narset's Reversal",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460989,
+    "id": 164
+  },
+  {
+    "name": "Neheb, Dreadhorde Champion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461067,
+    "id": 165
+  },
+  {
+    "name": "Neoform",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461133,
+    "id": 166
+  },
+  {
+    "name": "New Horizons",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461095,
+    "id": 167
+  },
+  {
+    "name": "Nicol Bolas, Dragon-God",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461134,
+    "id": 168
+  },
+  {
+    "name": "Nissa, Who Shakes the World",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461096,
+    "id": 169
+  },
+  {
+    "name": "Nissa's Triumph",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461097,
+    "id": 170
+  },
+  {
+    "name": "Niv-Mizzet Reborn",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461135,
+    "id": 171
+  },
+  {
+    "name": "No Escape",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460990,
+    "id": 172
+  },
+  {
+    "name": "Oath of Kaya",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461136,
+    "id": 173
+  },
+  {
+    "name": "Ob Nixilis, the Hate-Twisted",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461027,
+    "id": 174
+  },
+  {
+    "name": "Ob Nixilis's Cruelty",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461028,
+    "id": 175
+  },
+  {
+    "name": "Orzhov Guildgate",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463836,
+    "id": 176
+  },
+  {
+    "name": "Paradise Druid",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461098,
+    "id": 177
+  },
+  {
+    "name": "Parhelion II",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460951,
+    "id": 178
+  },
+  {
+    "name": "Plains",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461177,
+    "id": 179
+  },
+  {
+    "name": "Planewide Celebration",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461099,
+    "id": 180
+  },
+  {
+    "name": "Pledge of Unity",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461137,
+    "id": 181
+  },
+  {
+    "name": "Pollenbright Druid",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461100,
+    "id": 182
+  },
+  {
+    "name": "Pouncing Lynx",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460952,
+    "id": 183
+  },
+  {
+    "name": "Price of Betrayal",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461029,
+    "id": 184
+  },
+  {
+    "name": "Primordial Wurm",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461101,
+    "id": 185
+  },
+  {
+    "name": "Prismite",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461169,
+    "id": 186
+  },
+  {
+    "name": "Prison Realm",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460953,
+    "id": 187
+  },
+  {
+    "name": "Raging Kronch",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461068,
+    "id": 188
+  },
+  {
+    "name": "Ral, Storm Conduit",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461138,
+    "id": 189
+  },
+  {
+    "name": "Rally of Wings",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460954,
+    "id": 190
+  },
+  {
+    "name": "Ral's Outburst",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461139,
+    "id": 191
+  },
+  {
+    "name": "Ravnica at War",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460955,
+    "id": 192
+  },
+  {
+    "name": "Relentless Advance",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460991,
+    "id": 193
+  },
+  {
+    "name": "Rescuer Sphinx",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460992,
+    "id": 194
+  },
+  {
+    "name": "Return to Nature",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461102,
+    "id": 195
+  },
+  {
+    "name": "Rising Populace",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460956,
+    "id": 196
+  },
+  {
+    "name": "Roalesk, Apex Hybrid",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461140,
+    "id": 197
+  },
+  {
+    "name": "Role Reversal",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461141,
+    "id": 198
+  },
+  {
+    "name": "Rubblebelt Rioters",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461142,
+    "id": 199
+  },
+  {
+    "name": "Saheeli, Sublime Artificer",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461161,
+    "id": 200
+  },
+  {
+    "name": "Saheeli's Silverwing",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461170,
+    "id": 201
+  },
+  {
+    "name": "Samut, Tyrant Smasher",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461162,
+    "id": 202
+  },
+  {
+    "name": "Samut's Sprint",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461069,
+    "id": 203
+  },
+  {
+    "name": "Sarkhan the Masterless",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461070,
+    "id": 204
+  },
+  {
+    "name": "Sarkhan's Catharsis",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461071,
+    "id": 205
+  },
+  {
+    "name": "Shriekdiver",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461030,
+    "id": 206
+  },
+  {
+    "name": "Silent Submersible",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460993,
+    "id": 207
+  },
+  {
+    "name": "Simic Guildgate",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463841,
+    "id": 208
+  },
+  {
+    "name": "Single Combat",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460957,
+    "id": 209
+  },
+  {
+    "name": "Sky Theater Strix",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460994,
+    "id": 210
+  },
+  {
+    "name": "Snarespinner",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461103,
+    "id": 211
+  },
+  {
+    "name": "Solar Blaze",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461143,
+    "id": 212
+  },
+  {
+    "name": "Sorin, Vengeful Bloodlord",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461144,
+    "id": 213
+  },
+  {
+    "name": "Sorin's Thirst",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461031,
+    "id": 214
+  },
+  {
+    "name": "Soul Diviner",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461145,
+    "id": 215
+  },
+  {
+    "name": "Spark Double",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460995,
+    "id": 216
+  },
+  {
+    "name": "Spark Harvest",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461032,
+    "id": 217
+  },
+  {
+    "name": "Spark Reaper",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461033,
+    "id": 218
+  },
+  {
+    "name": "Spellgorger Weird",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461072,
+    "id": 219
+  },
+  {
+    "name": "Spellkeeper Weird",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460996,
+    "id": 220
+  },
+  {
+    "name": "Steady Aim",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461104,
+    "id": 221
+  },
+  {
+    "name": "Stealth Mission",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460997,
+    "id": 222
+  },
+  {
+    "name": "Storm the Citadel",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461105,
+    "id": 223
+  },
+  {
+    "name": "Storrev, Devkarin Lich",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461146,
+    "id": 224
+  },
+  {
+    "name": "Sunblade Angel",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460958,
+    "id": 225
+  },
+  {
+    "name": "Swamp",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461183,
+    "id": 226
+  },
+  {
+    "name": "Tamiyo, Collector of Tales",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461147,
+    "id": 227
+  },
+  {
+    "name": "Tamiyo's Epiphany",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460998,
+    "id": 228
+  },
+  {
+    "name": "Teferi, Time Raveler",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461148,
+    "id": 229
+  },
+  {
+    "name": "Teferi's Time Twist",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460999,
+    "id": 230
+  },
+  {
+    "name": "Tenth District Legionnaire",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461149,
+    "id": 231
+  },
+  {
+    "name": "Teyo, the Shieldmage",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460959,
+    "id": 232
+  },
+  {
+    "name": "Teyo's Lightshield",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460960,
+    "id": 233
+  },
+  {
+    "name": "Tezzeret, Master of the Bridge",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 463842,
+    "id": 234
+  },
+  {
+    "name": "The Elderspell",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461016,
+    "id": 235
+  },
+  {
+    "name": "The Wanderer",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460964,
+    "id": 236
+  },
+  {
+    "name": "Thunder Drake",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461000,
+    "id": 237
+  },
+  {
+    "name": "Thundering Ceratok",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461106,
+    "id": 238
+  },
+  {
+    "name": "Tibalt, Rakish Instigator",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461073,
+    "id": 239
+  },
+  {
+    "name": "Tibalt's Rager",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461074,
+    "id": 240
+  },
+  {
+    "name": "Time Wipe",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461150,
+    "id": 241
+  },
+  {
+    "name": "Tithebearer Giant",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461034,
+    "id": 242
+  },
+  {
+    "name": "Toll of the Invasion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461035,
+    "id": 243
+  },
+  {
+    "name": "Tolsimir, Friend to Wolves",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461151,
+    "id": 244
+  },
+  {
+    "name": "Tomik, Distinguished Advokist",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460961,
+    "id": 245
+  },
+  {
+    "name": "Topple the Statue",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460962,
+    "id": 246
+  },
+  {
+    "name": "Totally Lost",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461001,
+    "id": 247
+  },
+  {
+    "name": "Trusted Pegasus",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460963,
+    "id": 248
+  },
+  {
+    "name": "Turret Ogre",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461075,
+    "id": 249
+  },
+  {
+    "name": "Tyrant's Scorn",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461152,
+    "id": 250
+  },
+  {
+    "name": "Ugin, the Ineffable",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460929,
+    "id": 251
+  },
+  {
+    "name": "Ugin's Conjurant",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460930,
+    "id": 252
+  },
+  {
+    "name": "Unlikely Aid",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461036,
+    "id": 253
+  },
+  {
+    "name": "Vampire Opportunist",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461037,
+    "id": 254
+  },
+  {
+    "name": "Vivien, Champion of the Wilds",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461107,
+    "id": 255
+  },
+  {
+    "name": "Vivien's Arkbow",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461108,
+    "id": 256
+  },
+  {
+    "name": "Vivien's Grizzly",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461109,
+    "id": 257
+  },
+  {
+    "name": "Vizier of the Scorpion",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461038,
+    "id": 258
+  },
+  {
+    "name": "Vraska, Swarm's Eminence",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461163,
+    "id": 259
+  },
+  {
+    "name": "Vraska's Finisher",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461039,
+    "id": 260
+  },
+  {
+    "name": "Wall of Runes",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461002,
+    "id": 261
+  },
+  {
+    "name": "Wanderer's Strike",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460965,
+    "id": 262
+  },
+  {
+    "name": "War Screecher",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 460966,
+    "id": 263
+  },
+  {
+    "name": "Wardscale Crocodile",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461110,
+    "id": 264
+  },
+  {
+    "name": "Widespread Brutality",
+    "set": "War of the Spark",
+    "setcode": "WAR",
+    "mtgid": 461153,
+    "id": 265
+  }
+]

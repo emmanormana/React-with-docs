@@ -2,10 +2,9 @@ import React from "react";
 
 // core components
 import ExamplesNavbar from "components/Navbars/MTGNavbar.js";
-import MTGCustomerHeader from "components/MTGViews/MTGCustomerHeader.js"
+import MTGCustomerHeader from "components/MTGViews/MTGCustomerHeader.js";
 
-
-function MTGCustomerLanding() {
+function MTGCustomerLanding(props) {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -16,7 +15,7 @@ function MTGCustomerLanding() {
   return (
     <>
       <ExamplesNavbar />
-      <MTGCustomerHeader />
+      <MTGCustomerHeader {...props} />
     </>
   );
 }

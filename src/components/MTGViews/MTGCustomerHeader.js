@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
 
 // core components
 
-function MTGCustomerHeader() {
+function MTGCustomerHeader(props) {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -26,7 +27,10 @@ function MTGCustomerHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Back-to-Basics_UMA_1280x960_Wallpaper.jpg") + ")"
+          backgroundImage:
+            "url(" +
+            require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Back-to-Basics_UMA_1280x960_Wallpaper.jpg") +
+            ")"
         }}
         className="page-header"
         data-parallax={true}
@@ -47,15 +51,18 @@ function MTGCustomerHeader() {
             >
               Tap a Land
             </Button>
-            <Button
-              href="/MTGShelf"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
-              outline
-            >
-              Manage a Shelf
-            </Button>
+
+            <Link to="/MTGShelf">
+              <Button
+                className="btn-round mr-1"
+                color="neutral"
+                target="_blank"
+                outline
+              >
+                Manage a Shelf
+              </Button>
+            </Link>
+
             <Button
               href="/MTGCustWish"
               className="btn-round mr-1"

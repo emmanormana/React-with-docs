@@ -1,8 +1,9 @@
-import React from "react"
+import React from "react";
 import axios from "axios";
 import { MDBContainer } from "mdbreact";
 import "assets/css/scrollbar.css";
-import MTGCard from"classes/MTGCard.js"
+import MTGCard from "classes/MTGCard.js";
+import response from "./MTGCardsTable.json";
 
 // reactstrap components
 import {
@@ -16,7 +17,6 @@ import {
   Col
 } from "reactstrap";
 
-
 class Tables extends React.Component {
   constructor(props) {
     super(props);
@@ -27,8 +27,8 @@ class Tables extends React.Component {
       mset: MTGCard.set,
       msetcode: MTGCard.setcode,
       mmtgid: MTGCard.mtgid,
-      searchinput: '',
-      qtyinput: '0'
+      searchinput: "",
+      qtyinput: "0"
     };
   }
 
@@ -38,127 +38,152 @@ class Tables extends React.Component {
   }
 
   GetAll = () => {
-    axios.get('http://localhost:5000/api/MTGCard')
-      .then((response) => {
-        // handle success 
-        this.setState({ MTGCard: response.data });
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });
-  }
-
-  GetByName = () => {
-    axios.get(`http://localhost:5000/api/MTGCard/Name/${this.state.searchinput}`)
-      .then((response) => {
-        // handle success 
-        this.setState({ MTGCard: response.data });
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });
-  }
-
-  GetBySet = () => {
-    axios.get(`http://localhost:5000/api/MTGCard/Set/${this.state.searchinput}`)
-      .then((response) => {
-        // handle success 
-        this.setState({ MTGCard: response.data });
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });
-  }
-
-  GetBySetCode = () => {
-    axios.get(`http://localhost:5000/api/MTGCard/SetCode/${this.state.searchinput}`)
-      .then((response) => {
-        // handle success 
-        this.setState({ MTGCard: response.data });
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });
-  }
-
-  GetByMTGId = () => {
-    axios.get(`http://localhost:5000/api/MTGCard/MTGId/${this.state.searchinput}`)
-      .then((response) => {
-        // handle success 
-        this.setState({ MTGCard: response.data });
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });
-  }
-
-  MakeaWish = (id) => {
-    axios.get(`http://localhost:5000/api/MTGCard/MTGId/`)
-      .then((response) => {
-        // handle success 
-        this.setState({ MTGCard: response.data });
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });
-  }
-
-  onChange = (e) => {this.setState(
-    {
-       qtyinput: e.target.value
-    })
-    ;}
-
-  rendertable = () => {
-    return this.state.MTGCard.map((item) => {
-      return (
-        <tr key={item.id}>
-        <td>{item.mtgid}</td>
-        <td>{item.name}</td>
-        <td>{item.set}</td>
-        <td>{item.setcode}</td>
-        <td><input id={item.id} type="text" value={this.state.qtyinput}
-            onChange={this.onChange}
-        /></td>
-        <td>
-          <Button
-          className="btn-round"
-          color="info"
-          outline
-          size="sm"
-          onClick={this.MakeaWish(item.id)}
-          >
-          <i className="nc-icon nc-bag-16" /> Wish It!
-          </Button>
-        </td>             
-      </tr>)
-    })
+    this.setState({ MTGCard: response });
+    // axios
+    //   .get("https://hastebin.com/raw/hapoqanoho")
+    //   .then(response => {
+    //     // handle success
+    //     this.setState({ MTGCard: response.data });
+    //   })
+    //   .catch(function(error) {
+    //     // handle error
+    //     console.log(error);
+    //   })
+    //   .finally(function() {
+    //     // always executed
+    //   });
   };
 
+  GetByName = () => {
+    axios
+      .get(`http://localhost:5000/api/MTGCard/Name/${this.state.searchinput}`)
+      .then(response => {
+        // handle success
+        this.setState({ MTGCard: response.data });
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function() {
+        // always executed
+      });
+  };
+
+  GetBySet = () => {
+    axios
+      .get(`http://localhost:5000/api/MTGCard/Set/${this.state.searchinput}`)
+      .then(response => {
+        // handle success
+        this.setState({ MTGCard: response.data });
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function() {
+        // always executed
+      });
+  };
+
+  GetBySetCode = () => {
+    axios
+      .get(
+        `http://localhost:5000/api/MTGCard/SetCode/${this.state.searchinput}`
+      )
+      .then(response => {
+        // handle success
+        this.setState({ MTGCard: response.data });
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function() {
+        // always executed
+      });
+  };
+
+  GetByMTGId = () => {
+    axios
+      .get(`http://localhost:5000/api/MTGCard/MTGId/${this.state.searchinput}`)
+      .then(response => {
+        // handle success
+        this.setState({ MTGCard: response.data });
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function() {
+        // always executed
+      });
+  };
+
+  MakeaWish = id => {
+    axios
+      .get(`http://localhost:5000/api/MTGCard/MTGId/`)
+      .then(response => {
+        // handle success
+        this.setState({ MTGCard: response.data });
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function() {
+        // always executed
+      });
+  };
+
+  onChange = (e, itemIndex) => {
+    // const newMTGCard = [ ...this.state.MTGCard ] //cria um copia nova na memoria
+
+    this.setState({
+      MTGCard: this.state.MTGCard.map((item, index) => {
+        if (itemIndex === index) {
+          return {
+            ...item,
+            qtyinput: e.target.value
+          };
+        }
+
+        return item;
+      })
+    });
+  };
+
+  rendertable = () => {
+    return this.state.MTGCard.map((item, index) => {
+      return (
+        <tr key={item.id}>
+          <td>{item.mtgid}</td>
+          <td>{item.name}</td>
+          <td>{item.set}</td>
+          <td>{item.setcode}</td>
+          <td>
+            <input
+              id={item.id}
+              type="text"
+              value={item.qtyinput}
+              onChange={event => this.onChange(event, index)}
+            />
+          </td>
+          <td>
+            <Button
+              className="btn-round"
+              color="info"
+              outline
+              size="sm"
+              onClick={this.MakeaWish(item.id)}
+            >
+              <i className="nc-icon nc-bag-16" /> Wish It!
+            </Button>
+          </td>
+        </tr>
+      );
+    });
+  };
 
   render() {
     let pageHeader = React.createRef();
@@ -167,31 +192,34 @@ class Tables extends React.Component {
     return (
       <>
         <div
-          style=
-          {
-            {
-            backgroundImage: "url(" + require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Ferocious_Pup_M20_1920x1080.jpg") + ")"
-            }
-          }
+          style={{
+            backgroundImage:
+              "url(" +
+              require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Ferocious_Pup_M20_1920x1080.jpg") +
+              ")"
+          }}
           className="page-header"
           data-parallax={true}
           ref={pageHeader}
         >
           <div className="filter" />
           <MDBContainer>
-            <div className="scrollbar scrollbar-default" style={scrollContainerStyle}>
+            <div
+              className="scrollbar scrollbar-default"
+              style={scrollContainerStyle}
+            >
               <Row md="12">
                 <Col md="12">
                   <Card>
                     <CardHeader>
                       <CardTitle tag="h4">Choose your Weapons</CardTitle>
-                      <input placeholder="Search..." type="text" className="form-control"
-                        value=
-                        {
-                          this.state.searchinput
-                        }
-                        onChange={
-                          (event) => (this.setState({ searchinput: event.target.value }))
+                      <input
+                        placeholder="Search..."
+                        type="text"
+                        className="form-control"
+                        value={this.state.searchinput}
+                        onChange={event =>
+                          this.setState({ searchinput: event.target.value })
                         }
                       />
                       <Button
@@ -202,8 +230,8 @@ class Tables extends React.Component {
                         onClick={this.GetByName}
                       >
                         <i className="fa fa-search" /> Find By Name
-                  </Button>
-                  <Button
+                      </Button>
+                      <Button
                         className="btn-round"
                         color="success"
                         outline
@@ -211,8 +239,8 @@ class Tables extends React.Component {
                         onClick={this.GetBySet}
                       >
                         <i className="fa fa-search" /> Find By Set
-                  </Button>
-                  <Button
+                      </Button>
+                      <Button
                         className="btn-round"
                         color="success"
                         outline
@@ -220,8 +248,8 @@ class Tables extends React.Component {
                         onClick={this.GetBySetCode}
                       >
                         <i className="fa fa-search" /> Find By Set Code
-                  </Button>
-                  <Button
+                      </Button>
+                      <Button
                         className="btn-round"
                         color="success"
                         outline
@@ -229,7 +257,7 @@ class Tables extends React.Component {
                         onClick={this.GetByMTGId}
                       >
                         <i className="fa fa-search" /> Find By MTG Card ID
-                  </Button>
+                      </Button>
                     </CardHeader>
                     <CardBody>
                       <Table responsive>
@@ -243,9 +271,7 @@ class Tables extends React.Component {
                             <th>Wish</th>
                           </tr>
                         </thead>
-                        <tbody>
-                          {this.rendertable()}
-                        </tbody>
+                        <tbody>{this.rendertable()}</tbody>
                       </Table>
                     </CardBody>
                   </Card>
@@ -259,4 +285,4 @@ class Tables extends React.Component {
   }
 }
 
-export default Tables
+export default Tables;
