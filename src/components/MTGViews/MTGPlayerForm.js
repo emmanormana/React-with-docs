@@ -30,7 +30,7 @@ class PlayerForm extends React.Component {
         // handle success
         const result = response.data[0];
         this.props.handleCustomerId(result.id);
-      })
+      });
   };
 
   onSubmit = e => {
@@ -46,7 +46,6 @@ class PlayerForm extends React.Component {
       })
       .then(result => {
         this.GetByName();
-         this.props.history.push("/mtgcustomerlanding");
       });
   };
 
