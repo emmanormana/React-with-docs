@@ -31,48 +31,10 @@ class Tables extends React.Component {
   }
 
   GetAll = () => {
-    const response = [
-      {
-        name: "Trading Post",
-        document: "12345678000190",
-        address: "Ixalan",
-        telephone: "2345678",
-        workinghours: "[Tue~Fri:] 18:00~24:00 [Sat] 14:00~24:00",
-        status: true,
-        id: 1
-      },
-      {
-        name: "Island",
-        document: "12345678910111",
-        address: "Island",
-        telephone: "454878898",
-        workinghours: "From time to time",
-        status: true,
-        id: 2
-      },
-      {
-        name: "Mountain",
-        document: "12345678911111",
-        address: "Mountain",
-        telephone: "454878898",
-        workinghours: "When Maome comes to mountain",
-        status: true,
-        id: 3
-      }
-    ];
-    this.setState({ Spot: response });
-    // axios.get('http://localhost:5000/api/Spot')
-    //   .then((response) => {
-    //     // handle success
-    //     this.setState({ Spot: response.data });
-    //   })
-    //   .catch(function (error) {
-    //     // handle error
-    //     console.log(error);
-    //   })
-    //   .finally(function () {
-    //     // always executed
-    //   });
+     axios.get('http://localhost:5000/api/Spot')
+       .then((response) => {
+         this.setState({ Spot: response.data });
+       })
   };
 
   GetByName = () => {
@@ -82,13 +44,6 @@ class Tables extends React.Component {
         // handle success
         this.setState({ Spot: response.data });
       })
-      .catch(function(error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function() {
-        // always executed
-      });
   };
 
   GetByCustId = () => {
@@ -98,13 +53,6 @@ class Tables extends React.Component {
         // handle success
         this.setState({ Spot: response.data });
       })
-      .catch(function(error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function() {
-        // always executed
-      });
   };
 
   SelectSpot = spotid => {};
@@ -129,8 +77,7 @@ class Tables extends React.Component {
                 color="info"
                 outline
                 size="sm"
-                //onClick={this.SelectSpot(item.id)}
-              >
+               >
                 <i className="nc-icon nc-istanbul" /> Select Spot
               </Button>
             </Link>

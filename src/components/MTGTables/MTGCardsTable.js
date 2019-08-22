@@ -2,8 +2,7 @@ import React from "react";
 import axios from "axios";
 import { MDBContainer } from "mdbreact";
 import "assets/css/scrollbar.css";
-import MTGCard from "classes/MTGCard.js";
-import response from "./MTGCardsTable.json";
+import ReactDatetime from "react-datetime";
 
 // reactstrap components
 import {
@@ -16,19 +15,17 @@ import {
   Row,
   Col
 } from "reactstrap";
+import { now } from "moment";
 
 class Tables extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       MTGCard: [],
-      mid: MTGCard.id,
-      mname: MTGCard.name,
-      mset: MTGCard.set,
-      msetcode: MTGCard.setcode,
-      mmtgid: MTGCard.mtgid,
+      customerid: props.customerid,
       searchinput: "",
-      qtyinput: "0"
+      qtyinput: "0",
+      returndate: now()
     };
   }
 
@@ -38,20 +35,11 @@ class Tables extends React.Component {
   }
 
   GetAll = () => {
-    this.setState({ MTGCard: response });
-    // axios
-    //   .get("https://hastebin.com/raw/hapoqanoho")
-    //   .then(response => {
-    //     // handle success
-    //     this.setState({ MTGCard: response.data });
-    //   })
-    //   .catch(function(error) {
-    //     // handle error
-    //     console.log(error);
-    //   })
-    //   .finally(function() {
-    //     // always executed
-    //   });
+     axios
+       .get("http://localhost:5000/api/MTGCard")
+       .then(response => {
+          this.setState({ MTGCard: response.data });
+        })
   };
 
   GetByName = () => {
@@ -61,13 +49,6 @@ class Tables extends React.Component {
         // handle success
         this.setState({ MTGCard: response.data });
       })
-      .catch(function(error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function() {
-        // always executed
-      });
   };
 
   GetBySet = () => {
@@ -120,9 +101,9 @@ class Tables extends React.Component {
       });
   };
 
-  MakeaWish = id => {
+  MakeaWish = (e,index) => {
     axios
-      .get(`http://localhost:5000/api/MTGCard/MTGId/`)
+      .post(`http://localhost:5000/api/MTGCard/MTGId/`)
       .then(response => {
         // handle success
         this.setState({ MTGCard: response.data });
@@ -147,7 +128,22 @@ class Tables extends React.Component {
             qtyinput: e.target.value
           };
         }
+        return item;
+      })
+    });
+  };
 
+  onChangeDate = (e, itemIndex) => {
+    // const newMTGCard = [ ...this.state.MTGCard ] //cria um copia nova na memoria
+
+    this.setState({
+      MTGCard: this.state.MTGCard.map((item, index) => {
+        if (itemIndex === index) {
+          return {
+            ...item,
+            returndate: e.targetdate
+          };
+        }
         return item;
       })
     });
@@ -166,7 +162,14 @@ class Tables extends React.Component {
               id={item.id}
               type="text"
               value={item.qtyinput}
-              onChange={event => this.onChange(event, index)}
+              style={{width : "40px"}}
+              onChange={event => this.MakeaWish(event, index)}
+            />
+          </td>
+          <td>
+            <ReactDatetime
+              value={item.returndate}
+              onChange={event => this.onChangeDate(event, index)}
             />
           </td>
           <td>
@@ -175,7 +178,7 @@ class Tables extends React.Component {
               color="info"
               outline
               size="sm"
-              onClick={this.MakeaWish(item.id)}
+              onClick={event => this.onChangeDate(event, index)}
             >
               <i className="nc-icon nc-bag-16" /> Wish It!
             </Button>
@@ -195,7 +198,7 @@ class Tables extends React.Component {
           style={{
             backgroundImage:
               "url(" +
-              require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Ferocious_Pup_M20_1920x1080.jpg") +
+              require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Growth-Spiral_RNA_1280x960_Wallpaper.jpg") +
               ")"
           }}
           className="page-header"
@@ -268,6 +271,7 @@ class Tables extends React.Component {
                             <th>Set</th>
                             <th>Set Code</th>
                             <th>Quantity</th>
+                            <th>Return Date</th>
                             <th>Wish</th>
                           </tr>
                         </thead>

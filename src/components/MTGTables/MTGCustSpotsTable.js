@@ -2,6 +2,7 @@ import React from "react"
 import axios from "axios";
 import { MDBContainer } from "mdbreact";
 import "assets/css/scrollbar.css";
+import { Link } from "react-router-dom";
 
 // reactstrap components
 import {
@@ -88,15 +89,21 @@ class Tables extends React.Component {
         <td>{item.telephone}</td>
         <td>{item.workinghours}</td>
         <td>          
-            <Button
+        <Link
+              to={{
+                pathname: `/mtgselectspot/${item.id}`,
+                state: { spot: item }
+              }}
+            >
+              <Button
                 className="btn-round"
                 color="info"
                 outline
                 size="sm"
-                //onClick={this.SelectSpot(item.id)}
-                >
-                <i className="fa fa-share" /> Tap this Land
-            </Button>
+               >
+                <i className="fa fa-share" /> Tap This Land
+              </Button>
+            </Link>
         </td>
       </tr>)
     })
@@ -170,13 +177,14 @@ class Tables extends React.Component {
                           {this.rendertable()}
                         </tbody>
                       </Table>
+                      <Link to="/MTGCustomerLanding">
                       <Button
-                        href = "/mtgcustomerlanding"
                         className="btn-round"
                         color="primary"
                       >
                       Return To Previous Menu
-                    </Button>
+                      </Button>
+                      </Link>
                     </CardBody>
                   </Card>
                 </Col>

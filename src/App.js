@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
 // pages
 import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
+import Icons from "views/NucleoIcons";
 import LandingPage from "views/MTG4Us/MTGLandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
@@ -14,20 +14,23 @@ import MTGCustomerLanding from "views/MTG4Us/MTGCustomerLanding.js";
 import MTGCustSpots from "views/MTG4Us/MTGCustSpots.js";
 import MTGShelf from "views/MTG4Us/MTGShelf.js";
 import MTGShelfCards from "views/MTG4Us/MTGShelfCards.js";
+import MTGWishTargets from "views/MTG4Us/MTGWishTargets";
+import MTGBags from "views/MTG4Us/MTGBag";
 
 export default class App extends React.Component {
   state = {
     spotSelected: null,
-    customerId: "1",
+    customerid: null,
     user: {
       name: "",
       email: ""
     }
   };
 
-  handleCustomerId = customerId => {
-    console.log("handleCustomerId", customerId);
-    this.setState({ customerId: customerId });
+  handleCustomerId = customerid => {
+    console.log("handleCustomerId", customerid);
+    this.setState({ customerid : customerid });
+    console.log(customerid);
   };
 
   handleUser = user => {
@@ -37,28 +40,24 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>NAVBAR DA APP</h1>
         <Switch>
           <Route path="/index" render={props => <Index {...props} />} />
-          <Route
-            path="/nucleo-icons"
-            render={props => <NucleoIcons {...props} />}
-          />
+          <Route path="/icons" render={props => <Icons {...props} />} />
           <Route
             path="/landing-page"
-            render={props => <LandingPage {...props} />}
+            component={props => <LandingPage {...props} />}
           />
           <Route
             path="/profile-page"
-            render={props => <ProfilePage {...props} />}
+            component={props => <ProfilePage {...props} />}
           />
           <Route
             path="/register-page"
-            render={props => <RegisterPage {...props} />}
+            component={props => <RegisterPage {...props} />}
           />
           <Route
             path="/mtgplayer"
-            render={props => (
+            component={props => (
               <MTGPlayer {...props} handleCustomerId={this.handleCustomerId} />
             )}
           />
@@ -66,25 +65,33 @@ export default class App extends React.Component {
           <Route path="/mtgspot" render={props => <MTGSpots {...props} />} />
           <Route
             path="/mtgspotlanding"
-            render={props => <MTGSpotLanding {...props} />}
+            component={props => <MTGSpotLanding {...props} />}
           />
           <Route
             path="/mtgcustomerlanding"
-            render={props => <MTGCustomerLanding {...props} />}
+            component={props => <MTGCustomerLanding {...props} customerid={this.state.customerid} />}
           />
           <Route
             path="/mtgcustspots"
-            render={props => <MTGCustSpots {...props} />}
+            component={props => <MTGCustSpots {...props} />}
           />
           <Route
             path="/mtgshelf"
-            render={props => (
-              <MTGShelf {...props} customerId={this.state.customerId} />
+            component={props => (
+              <MTGShelf {...props} customerid={this.state.customerid} />
             )}
           />
           <Route
             path="/mtgshelfcards"
-            render={props => <MTGShelfCards {...props} />}
+            component={props => <MTGShelfCards {...props} customerid={this.state.customerid} />}
+          />
+          <Route
+            path="/mtgwishtargets"
+            component={props => <MTGWishTargets {...props} customerid={this.state.customerid} />}
+          />
+          <Route
+            path="/mtgbag"
+            component={props => <MTGBags {...props} customerid={this.state.customerid} />}
           />
           <Route
             path="/mtgselectspot/:id"

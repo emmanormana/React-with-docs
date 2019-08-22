@@ -7,6 +7,7 @@ import MTGCustomerHeader from "components/MTGViews/MTGCustomerHeader.js";
 function MTGCustomerLanding(props) {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
+    console.log(props.customerid)
     document.body.classList.add("register-page");
     return function cleanup() {
       document.body.classList.remove("register-page");
@@ -15,7 +16,7 @@ function MTGCustomerLanding(props) {
   return (
     <>
       <ExamplesNavbar />
-      <MTGCustomerHeader {...props} />
+      <MTGCustomerHeader {...props} customerid={props.customerid} />
     </>
   );
 }

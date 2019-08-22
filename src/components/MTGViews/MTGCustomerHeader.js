@@ -5,23 +5,18 @@ import { Link } from "react-router-dom";
 import { Button, Container } from "reactstrap";
 
 // core components
+class MTGCustomerHeader extends React.Component {
+  constructor(props) {
+    console.log(props.customerid);
+    super(props);
+    this.state = {
+      customerid : props.customerid
+    };
+  }
 
-function MTGCustomerHeader(props) {
+ render() {
   let pageHeader = React.createRef();
-
-  React.useEffect(() => {
-    if (window.innerWidth < 991) {
-      const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
-      };
-      window.addEventListener("scroll", updateScroll);
-      return function cleanup() {
-        window.removeEventListener("scroll", updateScroll);
-      };
-    }
-  });
+  console.log(this.state.customerid);
 
   return (
     <>
@@ -42,8 +37,8 @@ function MTGCustomerHeader(props) {
             <h1>What will you cast?</h1>
             <h3>Hint: Make sure you tap your Lands first.</h3>
             <br />
+            <Link to="/MTGCustSpots">
             <Button
-              href="/MTGCustSpots"
               className="btn-round mr-1"
               color="neutral"
               target="_blank"
@@ -51,7 +46,7 @@ function MTGCustomerHeader(props) {
             >
               Tap a Land
             </Button>
-
+            </Link>
             <Link to="/MTGShelf">
               <Button
                 className="btn-round mr-1"
@@ -62,9 +57,8 @@ function MTGCustomerHeader(props) {
                 Manage a Shelf
               </Button>
             </Link>
-
+            <Link to="/MTGCards">
             <Button
-              href="/MTGCustWish"
               className="btn-round mr-1"
               color="neutral"
               target="_blank"
@@ -72,8 +66,9 @@ function MTGCustomerHeader(props) {
             >
               Make a Wish
             </Button>
+            </Link>
+            <Link to="/MTGBag">
             <Button
-              href="/MTGBag"
               className="btn-round mr-1"
               color="neutral"
               target="_blank"
@@ -81,11 +76,13 @@ function MTGCustomerHeader(props) {
             >
               Manage a Bag
             </Button>
+            </Link>
           </div>
         </Container>
       </div>
     </>
   );
+}
 }
 
 export default MTGCustomerHeader;

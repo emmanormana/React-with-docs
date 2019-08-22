@@ -11,6 +11,7 @@ class PlayerForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: null,
       name: Customer.custname,
       email: Customer.email,
       mobilephone: Customer.mobilephone,
@@ -22,24 +23,31 @@ class PlayerForm extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  GetByName = () => {
+    axios
+      .get(`http://localhost:5000/api/Customer/Name/${this.state.name}`)
+      .then(response => {
+        // handle success
+        const result = response.data[0];
+        this.props.handleCustomerId(result.id);
+      })
+  };
+
   onSubmit = e => {
     e.preventDefault();
     const { name, email, mobilephone, status } = this.state;
 
-    this.props.handleCustomerId("1");
-    this.props.history.push("/mtgcustomerlanding");
-
-    // axios
-    //   .post("http://localhost:5000/api/Customer", {
-    //     name,
-    //     email,
-    //     mobilephone,
-    //     status
-    //   })
-    //   .then(result => {
-    //     this.props.handleCustomerId(666);
-    //     this.props.history.push("/mtgcustomerlanding");
-    //   });
+    axios
+      .post("http://localhost:5000/api/Customer", {
+        name,
+        email,
+        mobilephone,
+        status
+      })
+      .then(result => {
+        this.GetByName();
+         this.props.history.push("/mtgcustomerlanding");
+      });
   };
 
   redirectTo = sURL => {

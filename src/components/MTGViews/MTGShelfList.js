@@ -6,7 +6,7 @@ import MTGShelfTable from "components/MTGTables/MTGShelfTable.js";
 function MTGShelfList(props) {
   return (
     <>
-      <MTGShelfTable {...props} />
+      <MTGShelfTable {...props} customerid={props.customerid} />
     </>
   );
 }

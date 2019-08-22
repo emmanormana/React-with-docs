@@ -2,7 +2,8 @@ import React from "react"
 import axios from "axios";
 import { MDBContainer } from "mdbreact";
 import "assets/css/scrollbar.css";
-import MTGCard from"classes/MTGCard.js"
+import MTGCard from"classes/MTGCard.js";
+import { Link } from "react-router-dom";
 
 // reactstrap components
 import {
@@ -127,36 +128,53 @@ class Tables extends React.Component {
       });
   }
 
-  onChange = (e) => {this.setState(
-    {
-       qtyinput: e.target.value
-    })
-    ;}
+  onChange = (e, itemIndex) => {
+    // const newMTGCard = [ ...this.state.MTGCard ] //cria um copia nova na memoria
+
+    this.setState({
+      MTGCard: this.state.MTGCard.map((item, index) => {
+        if (itemIndex === index) {
+          return {
+            ...item,
+            qtyinput: e.target.value
+          };
+        }
+
+        return item;
+      })
+    });
+  };
 
   rendertable = () => {
-    return this.state.MTGCard.map((item) => {
+    return this.state.MTGCard.map((item, index) => {
       return (
         <tr key={item.id}>
-        <td>{item.mtgid}</td>
-        <td>{item.name}</td>
-        <td>{item.set}</td>
-        <td>{item.setcode}</td>
-        <td><input id={item.id} type="text" value={this.state.qtyinput}
-            onChange={this.onChange}
-        /></td>
-        <td>
-          <Button
-          className="btn-round"
-          color="info"
-          outline
-          size="sm"
-          onClick={this.AddToShelf(item.id)}
-          >
-          <i className="nc-icon nc-send" /> Add to Shelf
-          </Button>
-        </td>             
-      </tr>)
-    })
+          <td>{item.mtgid}</td>
+          <td>{item.name}</td>
+          <td>{item.set}</td>
+          <td>{item.setcode}</td>
+          <td>
+            <input
+              id={item.id}
+              type="text"
+              value={item.qtyinput}
+              onChange={event => this.onChange(event, index)}
+            />
+          </td>
+          <td>
+            <Button
+              className="btn-round"
+              color="info"
+              outline
+              size="sm"
+              onClick={this.AddToShelf(item.id)}
+            >
+              <i className="fa fa-book" /> Add To Shelf
+            </Button>
+          </td>
+        </tr>
+      );
+    });
   };
 
 
@@ -247,13 +265,19 @@ class Tables extends React.Component {
                           {this.rendertable()}
                         </tbody>
                       </Table>
+                      <Link
+                        to={{
+                          pathname: `/mtgshelf`,
+                          state: this.searchinput
+                        }}
+                      >
                         <Button
-                        href="/mtgshelf"
                         className="btn-round"
                         color="primary"
                         >
                           Return To Previous Menu
                         </Button>
+                      </Link>  
                     </CardBody>
                   </Card>
                 </Col>
