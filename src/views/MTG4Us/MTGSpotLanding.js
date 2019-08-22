@@ -5,7 +5,7 @@ import ExamplesNavbar from "components/Navbars/MTGNavbar.js";
 import MTGSpotsHeader from "components/MTGViews/MTGSpotsHeader.js"
 
 
-function MTGPlayerSpots() {
+function MTGPlayerSpots(props) {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -16,7 +16,7 @@ function MTGPlayerSpots() {
   return (
     <>
       <ExamplesNavbar />
-      <MTGSpotsHeader />
+      <MTGSpotsHeader spotid={props.spotid}/>
     </>
   );
 }

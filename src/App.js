@@ -19,7 +19,7 @@ import MTGBags from "views/MTG4Us/MTGBag";
 
 export default class App extends React.Component {
   state = {
-    spotSelected: null,
+    spotid: null,
     customerid: null,
     user: {
       name: "",
@@ -65,7 +65,7 @@ export default class App extends React.Component {
           <Route path="/mtgspot" render={props => <MTGSpots {...props} />} />
           <Route
             path="/mtgspotlanding"
-            component={props => <MTGSpotLanding {...props} />}
+            component={props => <MTGSpotLanding {...props} spotid={props.match.params.id} />}
           />
           <Route
             path="/mtgcustomerlanding"

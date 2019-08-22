@@ -68,7 +68,7 @@ class Tables extends React.Component {
           <td>
             <Link
               to={{
-                pathname: `/mtgselectspot/${item.id}`,
+                pathname: `/mtgspotlanding/${item.id}`,
                 state: { spot: item }
               }}
             >
