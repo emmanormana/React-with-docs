@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Redirect, Switch } from "react-router-dom";
+import { Route, Redirect, Switch, withRouter } from "react-router-dom";
 // pages
 import Index from "views/Index.js";
 import Icons from "views/NucleoIcons";
@@ -17,7 +17,7 @@ import MTGShelfCards from "views/MTG4Us/MTGShelfCards.js";
 import MTGWishTargets from "views/MTG4Us/MTGWishTargets";
 import MTGBags from "views/MTG4Us/MTGBag";
 
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     spotid: null,
     customerid: null,
@@ -29,7 +29,9 @@ export default class App extends React.Component {
 
   handleCustomerId = customerid => {
     console.log("handleCustomerId", customerid);
-    this.setState({ customerid : customerid });
+    this.setState({ customerid: customerid }, () =>
+      this.props.history.push("/mtgcustomerlanding")
+    );
     console.log(customerid);
   };
 
@@ -69,7 +71,12 @@ export default class App extends React.Component {
           />
           <Route
             path="/mtgcustomerlanding"
-            component={props => <MTGCustomerLanding {...props} customerid={this.state.customerid} />}
+            component={props => (
+              <MTGCustomerLanding
+                {...props}
+                customerid={this.state.customerid}
+              />
+            )}
           />
           <Route
             path="/mtgcustspots"
@@ -83,15 +90,21 @@ export default class App extends React.Component {
           />
           <Route
             path="/mtgshelfcards"
-            component={props => <MTGShelfCards {...props} customerid={this.state.customerid} />}
+            component={props => (
+              <MTGShelfCards {...props} customerid={this.state.customerid} />
+            )}
           />
           <Route
             path="/mtgwishtargets"
-            component={props => <MTGWishTargets {...props} customerid={this.state.customerid} />}
+            component={props => (
+              <MTGWishTargets {...props} customerid={this.state.customerid} />
+            )}
           />
           <Route
             path="/mtgbag"
-            component={props => <MTGBags {...props} customerid={this.state.customerid} />}
+            component={props => (
+              <MTGBags {...props} customerid={this.state.customerid} />
+            )}
           />
           <Route
             path="/mtgselectspot/:id"
@@ -115,3 +128,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default withRouter(App);
