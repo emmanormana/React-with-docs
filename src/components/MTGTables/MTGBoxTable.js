@@ -37,20 +37,10 @@ class Tables extends React.Component {
        })
   };
 
-  EmptyBox = (e, itemIndex) => {
-    this.setState({
-      Box: this.state.Box.map((item, index) => {
-        if (itemIndex === index) {
-          return {
-            ...item
-          };
-        }
-        return item;
-      })
-    }); 
+  EmptyBox = (e, item) => {
     e.preventDefault();
-    const boxid = this.state.boxid;
-    console.log(this.state.Box);
+    const boxid = item.id;
+    console.log(item);
     console.log(boxid);
     axios.delete(`http://localhost:5000/api/BoxContent/${boxid}`)
     .then (result => {
@@ -75,7 +65,7 @@ class Tables extends React.Component {
               color="info"
               outline
               size="sm"
-              onClick={event => this.EmptyBox(event, index)}
+              onClick={event => this.EmptyBox(event, item)}
             >
               <i className="nc-icon nc-box" /> Exile Box Content
             </Button>

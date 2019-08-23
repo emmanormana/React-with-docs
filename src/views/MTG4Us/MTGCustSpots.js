@@ -5,7 +5,7 @@ import ExamplesNavbar from "components/Navbars/MTGNavbar.js";
 import MTGCustSpotList from "components/MTGViews/MTGCustSpotList.js"
 
 
-function MTGCustSpots() {
+function MTGCustSpots(props) {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -16,7 +16,7 @@ function MTGCustSpots() {
   return (
     <>
       <ExamplesNavbar />
-      <MTGCustSpotList />
+      <MTGCustSpotList {...props} customerid={props.customerid} />
     </>
   );
 }

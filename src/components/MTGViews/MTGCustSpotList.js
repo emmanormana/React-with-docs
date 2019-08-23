@@ -4,11 +4,11 @@ import React from "react";
 import MTGCustSpotsTable from "components/MTGTables/MTGCustSpotsTable.js";
 
 
-function MTGCustSpotList() {
+function MTGCustSpotList(props) {
 
   return (
     <>
-      <MTGCustSpotsTable />
+      <MTGCustSpotsTable {...props} customerid={props.customerid} />
     </>
   );
 

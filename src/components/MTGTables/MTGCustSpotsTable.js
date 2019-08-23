@@ -22,6 +22,7 @@ class Tables extends React.Component {
     super(props);
     this.state = {
       Spot: [],
+      customerid: props.customerid,
       searchinput: ''
     };
   }
@@ -76,8 +77,16 @@ class Tables extends React.Component {
       });
   }
 
-  SelectSpot = (spotid) => {
-
+  AddSpot = (e, item) => {
+    e.preventDefault();
+    const spotid = item.id;
+    console.log(item);
+    console.log(spotid);
+    console.log(this.state.customerid);
+    axios.post(`http://localhost:5000/api/Spot/Customer/${spotid}/${this.state.customerid}`)
+    .then (result => {
+      e.preventDefault();
+    });
   }
 
   rendertable = () => {
@@ -89,21 +98,15 @@ class Tables extends React.Component {
         <td>{item.telephone}</td>
         <td>{item.workinghours}</td>
         <td>          
-        <Link
-              to={{
-                pathname: `/mtgselectspot/${item.id}`,
-                state: { spot: item }
-              }}
-            >
-              <Button
-                className="btn-round"
-                color="info"
-                outline
-                size="sm"
-               >
-                <i className="fa fa-share" /> Tap This Land
-              </Button>
-            </Link>
+          <Button
+            className="btn-round"
+            color="info"
+            outline
+            size="sm"
+            onClick={event => this.AddSpot(event, item)}
+          >
+          <i className="fa fa-share" /> Tap This Land
+          </Button>
         </td>
       </tr>)
     })

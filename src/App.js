@@ -20,6 +20,7 @@ import MTGBox from "views/MTG4Us/MTGBox";
 import MTGNewBoxHeader from "components/MTGViews/MTGNewBoxHeader";
 import MTGWish from "views/MTG4Us/MTGWish";
 import MTGBoxExchange from "views/MTG4Us/MTGBoxExchange";
+import MTGReturn from "views/MTG4Us/MTGReturn";
 
 class App extends React.Component {
   state = {
@@ -114,7 +115,7 @@ class App extends React.Component {
           />
           <Route
             path="/mtgcustspots"
-            component={props => <MTGCustSpots {...props} />}
+            component={props => <MTGCustSpots {...props} customerid={this.state.customerid}/>}
           />
           <Route
             path="/mtgshelf"
@@ -162,6 +163,12 @@ class App extends React.Component {
             path="/mtgboxexchange"
             component={props => (
               <MTGBoxExchange {...props} spotid={this.state.spotid} Wish={this.Wish} />
+            )}
+          />
+          <Route
+            path="/mtgreturn"
+            component={props => (
+              <MTGReturn {...props} spotid={this.state.spotid} />
             )}
           />
           <Route
