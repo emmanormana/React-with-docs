@@ -49,10 +49,6 @@ class PlayerForm extends React.Component {
       });
   };
 
-  redirectTo = sURL => {
-    window.location = sURL;
-  };
-
   render() {
     const { name, email, mobilephone } = this.state;
     return (

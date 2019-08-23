@@ -3,6 +3,7 @@ import axios from "axios";
 import { MDBContainer } from "mdbreact";
 import "assets/css/scrollbar.css";
 import ReactDatetime from "react-datetime";
+import {Link} from "react-router-dom";
 
 // reactstrap components
 import {
@@ -163,7 +164,7 @@ class Tables extends React.Component {
               type="text"
               value={item.qtyinput}
               style={{width : "40px"}}
-              onChange={event => this.MakeaWish(event, index)}
+              onChange={event => this.onChange(event, index)}
             />
           </td>
           <td>
@@ -178,7 +179,7 @@ class Tables extends React.Component {
               color="info"
               outline
               size="sm"
-              onClick={event => this.onChangeDate(event, index)}
+              onClick={event => this.MakeaWish(event, index)}
             >
               <i className="nc-icon nc-bag-16" /> Wish It!
             </Button>
@@ -277,6 +278,14 @@ class Tables extends React.Component {
                         </thead>
                         <tbody>{this.rendertable()}</tbody>
                       </Table>
+                      <Link to = "/MTGCustomerLanding">
+                      <Button
+                        className="btn-round"
+                        color="primary"
+                      >
+                        Return
+                      </Button>
+                      </Link>
                     </CardBody>
                   </Card>
                 </Col>

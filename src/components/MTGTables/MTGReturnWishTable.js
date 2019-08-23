@@ -20,33 +20,74 @@ class Tables extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      Bag: [],
-      customerid: props.customerid
+        Wish: [],
+      spotid: props.spotid
     };
   }
 
   componentDidMount() {
     // Make a request for a user with a given ID
-    this.GetTargets();
+    this.GetWishes();
   }
 
-  GetTargets = () => {
-     axios.get(`http://localhost:5000/api/Bag/Customer/${this.state.customerid}`)
+  GetWishes = () => {
+     axios.get(`http://localhost:5000/api/Wish/Spot/${this.state.spotid}`)
        .then((response) => {
-         this.setState({ Bag: response.data });
+         this.setState({ Wish: response.data });
        })
   };
 
+  ReturnWish = (e, itemIndex) => {
+    this.setState({
+      Wish: this.state.Wish.map((item, index) => {
+        if (itemIndex === index) {
+          return {
+            ...item
+          };
+        }
+        return item;
+      })
+    }); 
+    e.preventDefault();
+    const exchangeid = this.Wish.exchangeid
+    axios
+      .patch(`http://localhost:5000/api/Exchange/Return/${exchangeid}`)
+      .then(result => {
+        e.preventDefault();
+        console.log(this.state.Wish);
+        this.props.handleWish(this.state.Wish);
+      });
+  }
+
   rendertable = () => {
-    return this.state.Bag.map(item => {
+    return this.state.Wish.map((item, index) => {
       return (
         <tr key={item.id}>
-          <td>{item.custname}</td>
+          <td>{item.custid}</td>
+          <td>{item.ownerid}</td>
           <td>{item.ownername}</td>
+          <td>{item.shelfid}</td>
+          <td>{item.bagid}</td>
+          <td>{item.itemid}</td>
           <td>{item.itemdescription}</td>
           <td>{item.quantity}</td>
-          <td>{item.wishid}</td>
+          <td>{item.spotid}</td>
+          <td>{item.spot}</td>
           <td>{item.returndate}</td>
+          <td>{item.expiringdate}</td>
+          <td>{item.boxid}</td>
+          <td>{item.boxnumber}</td>
+          <td>
+            <Button
+              className="btn-round"
+              color="info"
+              outline
+              size="sm"
+              onClick={event => this.ReturnWish(event, index)}
+            >
+              <i className="nc-icon nc-box" /> Box Returned Cards
+            </Button>
+          </td>
         </tr>
       );
     });
@@ -62,7 +103,7 @@ class Tables extends React.Component {
           style={{
             backgroundImage:
               "url(" +
-              require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Back-to-Basics_UMA_1280x960_Wallpaper.jpg") +
+              require("assets/img/MTG/https___magic.wizards.com_sites_mtg_files_images_wallpaper_Approach-of-the-Second-Sun_AKH_1280x960_Wallpaper.jpg") +
               ")"
           }}
           className="page-header"
@@ -79,23 +120,31 @@ class Tables extends React.Component {
                 <Col md="12">
                   <Card>
                     <CardHeader>
-                      <CardTitle tag="h4">Don't forget to return your items.</CardTitle>
+                      <CardTitle tag="h4">Wishes in this spot.</CardTitle>
                     </CardHeader>
                     <CardBody>
                       <Table responsive>
                         <thead className="text-primary">
                           <tr>
-                            <th>User Name</th>  
-                            <th>Card Owner Name</th>
+                            <th>Customer #</th>  
+                            <th>Owner #</th>
+                            <th>Owner Name</th>
+                            <th>Shelf #</th>
+                            <th>Bag #</th>
+                            <th>Card #</th>
                             <th>Card Name</th>
                             <th>Quantity</th>
-                            <th>Wish #</th>
+                            <th>Spot #</th>
+                            <th>Spot Name</th>
                             <th>Return Date</th>
+                            <th>Expiring Date</th>
+                            <th>Box #</th>
+                            <th>Box Number</th>
                           </tr>
                         </thead>
                         <tbody>{this.rendertable()}</tbody>
                       </Table>
-                      <Link to = "/MTGCustomerLanding">
+                      <Link to = "/MTGSpotLanding">
                       <Button
                         className="btn-round"
                         color="primary"

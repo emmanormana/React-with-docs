@@ -2,10 +2,10 @@ import React from "react";
 
 // core components
 import ExamplesNavbar from "components/Navbars/MTGNavbar.js";
-import MTGSpotList from "components/MTGViews/MTGSpotList.js"
+import MTGBoxList from "components/MTGViews/MTGBoxList.js"
 
 
-function MTGSpots(props) {
+function MTGBox(props) {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("register-page");
@@ -16,9 +16,9 @@ function MTGSpots(props) {
   return (
     <>
       <ExamplesNavbar />
-      <MTGSpotList {...props} handleSpotId={props.handleSpotId} />
+      <MTGBoxList {...props} spotid={props.spotid} />
     </>
   );
 }
 
-export default MTGSpots;
+export default MTGBox;

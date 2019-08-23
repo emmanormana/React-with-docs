@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
@@ -33,26 +34,8 @@ class MTGSpotsHeader extends React.Component {
               <h1>What will you cast?</h1>
               <h3>Hint: Note down your customer's Wish Id.</h3>
               <br />
+              <Link to="/MTGWish">
               <Button
-                href="/MTGWish"
-                className="btn-round mr-1"
-                color="neutral"
-                target="_blank"
-                outline
-              >
-                Find a Wish
-            </Button>
-              <Button
-                href="/MTGBox"
-                className="btn-round mr-1"
-                color="neutral"
-                target="_blank"
-                outline
-              >
-                Manage Boxes
-            </Button>
-              <Button
-                href="/MTGGrantWish"
                 className="btn-round mr-1"
                 color="neutral"
                 target="_blank"
@@ -60,8 +43,19 @@ class MTGSpotsHeader extends React.Component {
               >
                 Grant a Wish
             </Button>
+            </Link>
+            <Link to="/MTGBox">
               <Button
-                href="/MTGReturn"
+                className="btn-round mr-1"
+                color="neutral"
+                target="_blank"
+                outline
+              >
+                Manage Boxes
+            </Button>
+            </Link>
+            <Link to="/MTGReturn">
+              <Button
                 className="btn-round mr-1"
                 color="neutral"
                 target="_blank"
@@ -69,6 +63,7 @@ class MTGSpotsHeader extends React.Component {
               >
                 Return a Card
             </Button>
+            </Link>
             </div>
           </Container>
         </div>

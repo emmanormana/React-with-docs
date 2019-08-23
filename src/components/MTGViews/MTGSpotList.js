@@ -4,11 +4,11 @@ import React from "react";
 import MTGSpotsTable from "components/MTGTables/MTGSpotsTable.js";
 
 
-function MTGSpotList() {
+function MTGSpotList(props) {
 
   return (
     <>
-      <MTGSpotsTable />
+      <MTGSpotsTable {...props} handleSpotId={props.handleSpotId} />
     </>
   );
 

@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { MDBContainer } from "mdbreact";
 import "assets/css/scrollbar.css";
 
@@ -55,7 +54,13 @@ class Tables extends React.Component {
       })
   };
 
-  SelectSpot = spotid => {};
+  onClick = (event, id) => {
+    console.log(id);
+    event.preventDefault();
+    const spotid = id;
+    console.log(spotid);
+    this.props.handleSpotId(spotid);
+  }
 
   rendertable = () => {
     return this.state.Spot.map(item => {
@@ -66,21 +71,15 @@ class Tables extends React.Component {
           <td>{item.telephone}</td>
           <td>{item.workinghours}</td>
           <td>
-            <Link
-              to={{
-                pathname: `/mtgspotlanding/${item.id}`,
-                state: { spot: item }
-              }}
-            >
               <Button
                 className="btn-round"
                 color="info"
                 outline
                 size="sm"
+                onClick={event => {this.onClick(event, item.id)}}
                >
                 <i className="nc-icon nc-istanbul" /> Select Spot
               </Button>
-            </Link>
           </td>
         </tr>
       );

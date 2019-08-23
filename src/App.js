@@ -16,14 +16,32 @@ import MTGShelf from "views/MTG4Us/MTGShelf.js";
 import MTGShelfCards from "views/MTG4Us/MTGShelfCards.js";
 import MTGWishTargets from "views/MTG4Us/MTGWishTargets";
 import MTGBags from "views/MTG4Us/MTGBag";
+import MTGBox from "views/MTG4Us/MTGBox";
+import MTGNewBoxHeader from "components/MTGViews/MTGNewBoxHeader";
+import MTGWish from "views/MTG4Us/MTGWish";
+import MTGBoxExchange from "views/MTG4Us/MTGBoxExchange";
 
 class App extends React.Component {
   state = {
     spotid: null,
     customerid: null,
-    user: {
-      name: "",
-      email: ""
+    Wish: {
+      id:null,
+      custid:null,
+      ownerid:null,
+      ownername:null,
+      shelfid:null,
+      bagid:null,
+      itemid:null,
+      itemdescription:null,
+      quantity:null,
+      spotid:null,
+      spot:null,
+      boxid:null,
+      boxnumber:null,
+      returndate:null,
+      expiringdate:null,
+      status:null
     }
   };
 
@@ -35,8 +53,20 @@ class App extends React.Component {
     console.log(customerid);
   };
 
-  handleUser = user => {
-    this.setState({ user: user });
+  handleSpotId = spotid => {
+    console.log(spotid);
+    this.setState({ spotid: spotid }, () =>
+    this.props.history.push("/mtgspotlanding")
+    );
+    console.log(spotid);
+  };
+
+  handleWish = Wish => {
+    console.log(Wish);
+    this.setState({ Wish: Wish }, () =>
+    this.props.history.push("/mtgBoxExchange")
+    );
+    console.log(Wish);
   };
 
   render() {
@@ -63,11 +93,15 @@ class App extends React.Component {
               <MTGPlayer {...props} handleCustomerId={this.handleCustomerId} />
             )}
           />
-          <Route path="/mtgcards" render={props => <MTGCards {...props} />} />
-          <Route path="/mtgspot" render={props => <MTGSpots {...props} />} />
+          <Route 
+              path="/mtgcards" render={props => <MTGCards {...props} />} 
+          />
+          <Route 
+            path="/mtgspot" render={props => <MTGSpots {...props} handleSpotId={this.handleSpotId} />}
+          />
           <Route
             path="/mtgspotlanding"
-            component={props => <MTGSpotLanding {...props} spotid={props.match.params.id} />}
+            component={props => <MTGSpotLanding {...props} spotid={this.state.spotid} />}
           />
           <Route
             path="/mtgcustomerlanding"
@@ -104,6 +138,30 @@ class App extends React.Component {
             path="/mtgbag"
             component={props => (
               <MTGBags {...props} customerid={this.state.customerid} />
+            )}
+          />
+          <Route
+            path="/mtgbox"
+            component={props => (
+              <MTGBox {...props} spotid={this.state.spotid} />
+            )}
+          />
+          <Route
+            path="/mtgnewboxheader"
+            component={props => (
+              <MTGNewBoxHeader {...props} spotid={this.state.spotid} />
+            )}
+          />
+          <Route
+            path="/mtgwish"
+            component={props => (
+              <MTGWish {...props} spotid={this.state.spotid} handleSpotId={this.handleSpotId} />
+            )}
+          />
+          <Route
+            path="/mtgboxexchange"
+            component={props => (
+              <MTGBoxExchange {...props} spotid={this.state.spotid} Wish={this.Wish} />
             )}
           />
           <Route

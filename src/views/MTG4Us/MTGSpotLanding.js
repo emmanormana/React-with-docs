@@ -16,7 +16,7 @@ function MTGPlayerSpots(props) {
   return (
     <>
       <ExamplesNavbar />
-      <MTGSpotsHeader spotid={props.spotid}/>
+      <MTGSpotsHeader {...props} spotid={props.spotid}/>
     </>
   );
 }
