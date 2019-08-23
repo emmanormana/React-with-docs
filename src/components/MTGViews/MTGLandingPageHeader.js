@@ -54,7 +54,7 @@ function MTGLandingPageHeader() {
         <Container>
           <div className="motto text-center">
             <h1>Choose your Deck</h1>
-            <h3>For thorough explanation on how the system works, please click on documentation.</h3>
+            <h3>This is a demo of the product. Hence, no user data will be required to navigate the app.</h3>
             <br />
             <Button
               href="/MTGPlayer"
